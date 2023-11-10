@@ -1,26 +1,3 @@
-/*class Paddle {
-
-    constructor(x, y, w, h) {
-        this.pos = createVector(x, y);
-        this.w = w;
-        this.h = h;
-        this.score = 0;
-    }
-
-    move(amt) {
-        this.pos.y += amt;
-        this.pos.y = constrain(this.pos.y, 10, height - 10 - this.h);
-    }
-
-    show() {
-        noStroke();
-        fill(255);
-        rect(this.pos.x, this.pos.y, this.w, this.h);
-    }
-        
-
-}*/
-
 class Paddle {
     constructor(isLeft) {
         this.y = height/2;
@@ -56,15 +33,15 @@ class Paddle {
 
 
 function movePaddles() {
-    if (keyIsDown(65)) { // 65 is the key code for 'A'
+    if (keyIsDown(65)) { 
         left.move(-5);
-    } else if (keyIsDown(90)) { // 90 is the key code for 'Z'
+    } else if (keyIsDown(90)) { 
         left.move(5);
     }
 
-    if (keyIsDown(75)) { // 75 is the key code for 'J'
+    if (keyIsDown(75)) { 
         right.move(-5);
-    } else if (keyIsDown(77)) { // 77 is the key code for 'M'
+    } else if (keyIsDown(77)) { 
         right.move(5);
     }
 }

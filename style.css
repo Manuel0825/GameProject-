@@ -1,3 +1,22 @@
-
-
-
+#game-container {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Img/cssbackground.gif);
+    height: 100vh; /* Use 100% of the viewport height */
+    
+  }
+  
+  canvas {
+    /* Add any additional styles for your canvas if needed */
+    border: 1px solid #000;
+  }
+h1 {
+  background-color: black;
+    margin: 0%;
+    text-align: center;
+    color: turquoise
+   
+    
+}  
