@@ -48,18 +48,18 @@ function draw() {
     if (currentLevel < backgroundImages.length) {
       currentBackground = backgroundImages[currentLevel];
     } else {
-      // Display "Game Over" message
+     
       textSize(64);
       textAlign(CENTER, CENTER);
       fill(255, 0, 0);
       text("Game Over!", width / 2, height / 2);
-      noLoop(); // Stop the draw loop
+      noLoop(); 
     }
-    // Reset scores to 0 for the next level
+   
     leftscore = 0;
     rightscore = 0;
 
-    // Create the appropriate number of pucks for the current level
+   
     balls = [];
     for (let i = 0; i < currentLevel + 1; i++) {
       balls.push(new Ball());
@@ -67,7 +67,7 @@ function draw() {
   }
 
   if (currentLevel < 3 && balls.length === 0) {
-    // Create the appropriate number of pucks for the first level
+    
     for (let i = 0; i < 1; i++) {
       balls.push(new Ball());
     }
