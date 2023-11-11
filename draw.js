@@ -11,6 +11,7 @@ function preload() {
   backgroundImages[2] = loadImage("./Img/cssbackground.gif");
 
   currentBackground = backgroundImages[0];
+  sound = loadSound ("./sonidos/sound.wav")
 }
 
 function setup() {
@@ -21,7 +22,10 @@ function setup() {
   right = new Paddle(false);
 
   balls.push(new Ball());
+
+  sound.loop();
 }
+
 
 function draw() {
   background(currentBackground);
